@@ -20,7 +20,6 @@ export default {
 
     methods: {
         addItem() {
-            console.log(this.item.name);
             if (this.item.name == '') {
                 return;
             }
@@ -31,7 +30,6 @@ export default {
                     if (response.status == 201) {
                         this.$emit('reloadlist');
                         this.item.name == '';
-                        console.log('dai cazzo gianluca');
                     }
                 })
                 .catch(error => {
