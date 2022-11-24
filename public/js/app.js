@@ -5335,7 +5335,6 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     addItem: function addItem() {
       var _this = this;
-      console.log(this.item.name);
       if (this.item.name == '') {
         return;
       }
@@ -5345,7 +5344,6 @@ __webpack_require__.r(__webpack_exports__);
         if (response.status == 201) {
           _this.$emit('reloadlist');
           _this.item.name == '';
-          console.log('dai cazzo gianluca');
         }
       })["catch"](function (error) {
         console.log(error);
